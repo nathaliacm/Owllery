@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		5675BC9424E61AEA00F55131 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5675BC9324E61AEA00F55131 /* AppDelegate.swift */; };
 		5675BC9624E61AEA00F55131 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5675BC9524E61AEA00F55131 /* SceneDelegate.swift */; };
-		5675BC9824E61AEA00F55131 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5675BC9724E61AEA00F55131 /* ViewController.swift */; };
+		5675BC9824E61AEA00F55131 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5675BC9724E61AEA00F55131 /* TabBarController.swift */; };
 		5675BC9D24E61AEC00F55131 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5675BC9C24E61AEC00F55131 /* Assets.xcassets */; };
 		5675BCA024E61AEC00F55131 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5675BC9E24E61AEC00F55131 /* LaunchScreen.storyboard */; };
 		5691E20D24E6DB00008A4487 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 5691E20C24E6DB00008A4487 /* .swiftlint.yml */; };
+		5691E20F24E6FDD8008A4487 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E20E24E6FDD8008A4487 /* GalleryViewController.swift */; };
+		5691E21124E6FE16008A4487 /* GetInspiredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E21024E6FE16008A4487 /* GetInspiredViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5675BC9024E61AEA00F55131 /* Owllery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Owllery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5675BC9324E61AEA00F55131 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5675BC9524E61AEA00F55131 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5675BC9724E61AEA00F55131 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5675BC9724E61AEA00F55131 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		5675BC9C24E61AEC00F55131 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5675BC9F24E61AEC00F55131 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5675BCA124E61AEC00F55131 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5691E20C24E6DB00008A4487 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		5691E20E24E6FDD8008A4487 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		5691E21024E6FE16008A4487 /* GetInspiredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInspiredViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		5675BC9224E61AEA00F55131 /* Owllery */ = {
 			isa = PBXGroup;
 			children = (
+				5691E21224E6FE6E008A4487 /* Model */,
+				5691E21324E6FE79008A4487 /* View */,
+				5691E21424E6FE80008A4487 /* Controller */,
 				5675BC9324E61AEA00F55131 /* AppDelegate.swift */,
 				5675BC9524E61AEA00F55131 /* SceneDelegate.swift */,
-				5675BC9724E61AEA00F55131 /* ViewController.swift */,
 				5675BC9C24E61AEC00F55131 /* Assets.xcassets */,
 				5675BC9E24E61AEC00F55131 /* LaunchScreen.storyboard */,
 				5675BCA124E61AEC00F55131 /* Info.plist */,
 				5691E20C24E6DB00008A4487 /* .swiftlint.yml */,
 			);
 			path = Owllery;
+			sourceTree = "<group>";
+		};
+		5691E21224E6FE6E008A4487 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5691E21324E6FE79008A4487 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5691E21424E6FE80008A4487 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5675BC9724E61AEA00F55131 /* TabBarController.swift */,
+				5691E20E24E6FDD8008A4487 /* GalleryViewController.swift */,
+				5691E21024E6FE16008A4487 /* GetInspiredViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,9 +189,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5675BC9824E61AEA00F55131 /* ViewController.swift in Sources */,
+				5675BC9824E61AEA00F55131 /* TabBarController.swift in Sources */,
 				5675BC9424E61AEA00F55131 /* AppDelegate.swift in Sources */,
 				5675BC9624E61AEA00F55131 /* SceneDelegate.swift in Sources */,
+				5691E21124E6FE16008A4487 /* GetInspiredViewController.swift in Sources */,
+				5691E20F24E6FDD8008A4487 /* GalleryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
