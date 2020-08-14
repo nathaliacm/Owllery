@@ -1,5 +1,5 @@
 //
-//  GetInspiredViewController.swift
+//  NewAlbumViewController.swift
 //  Owllery
 //
 //  Created by Nathalia Cardoso on 14/08/20.
@@ -8,14 +8,16 @@
 
 import UIKit
 
-class GetInspiredViewController: UIViewController {
-    
+class NewAlbumViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         view.backgroundColor = .systemBackground
         navigationController?.navigationBar.prefersLargeTitles = true
-        navigationItem.title = "Inspirações"
+        navigationItem.title = "Novo Álbum"
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Salvar", style: .plain, target: self, action: nil)
     }
 
 }

@@ -18,7 +18,7 @@ class TabBarController: UITabBarController {
     func setupTabBar() {
         let galleryController = UINavigationController(rootViewController: GalleryViewController())
         galleryController.tabBarItem.image = UIImage(named: "galleryIcon")
-        galleryController.tabBarItem.title = "Ábuns"
+        galleryController.tabBarItem.title = "Galeria"
         
         let getInspiredController = UINavigationController(rootViewController: GetInspiredViewController())
         getInspiredController.tabBarItem.image = UIImage(named: "inspirationIcon")
