@@ -15,6 +15,7 @@
 		5691E20D24E6DB00008A4487 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 5691E20C24E6DB00008A4487 /* .swiftlint.yml */; };
 		5691E20F24E6FDD8008A4487 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E20E24E6FDD8008A4487 /* GalleryViewController.swift */; };
 		5691E21124E6FE16008A4487 /* GetInspiredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E21024E6FE16008A4487 /* GetInspiredViewController.swift */; };
+		5691E21624E71E25008A4487 /* NewAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E21524E71E25008A4487 /* NewAlbumViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		5691E20C24E6DB00008A4487 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		5691E20E24E6FDD8008A4487 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		5691E21024E6FE16008A4487 /* GetInspiredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInspiredViewController.swift; sourceTree = "<group>"; };
+		5691E21524E71E25008A4487 /* NewAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAlbumViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				5675BC9724E61AEA00F55131 /* TabBarController.swift */,
 				5691E20E24E6FDD8008A4487 /* GalleryViewController.swift */,
 				5691E21024E6FE16008A4487 /* GetInspiredViewController.swift */,
+				5691E21524E71E25008A4487 /* NewAlbumViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				5675BC9824E61AEA00F55131 /* TabBarController.swift in Sources */,
 				5675BC9424E61AEA00F55131 /* AppDelegate.swift in Sources */,
 				5675BC9624E61AEA00F55131 /* SceneDelegate.swift in Sources */,
+				5691E21624E71E25008A4487 /* NewAlbumViewController.swift in Sources */,
 				5691E21124E6FE16008A4487 /* GetInspiredViewController.swift in Sources */,
 				5691E20F24E6FDD8008A4487 /* GalleryViewController.swift in Sources */,
 			);

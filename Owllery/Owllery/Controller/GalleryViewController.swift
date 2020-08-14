@@ -16,6 +16,12 @@ class GalleryViewController: UIViewController {
         view.backgroundColor = .systemBackground
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "Owllery"
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Novo Álbum", style: .plain, target: self, action: #selector(GalleryViewController.newAlbumButtonItemTapped(_:)))
+    }
+    
+    @objc func newAlbumButtonItemTapped(_ sender: UIBarButtonItem!) {
+        self.navigationController?.pushViewController(NewAlbumViewController(), animated: true)
     }
 
 }
