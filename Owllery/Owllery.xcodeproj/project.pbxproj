@@ -16,6 +16,7 @@
 		5691E20F24E6FDD8008A4487 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E20E24E6FDD8008A4487 /* GalleryViewController.swift */; };
 		5691E21124E6FE16008A4487 /* GetInspiredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E21024E6FE16008A4487 /* GetInspiredViewController.swift */; };
 		5691E21624E71E25008A4487 /* NewAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E21524E71E25008A4487 /* NewAlbumViewController.swift */; };
+		5691E21824E72C82008A4487 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E21724E72C82008A4487 /* AlbumModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		5691E20E24E6FDD8008A4487 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		5691E21024E6FE16008A4487 /* GetInspiredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInspiredViewController.swift; sourceTree = "<group>"; };
 		5691E21524E71E25008A4487 /* NewAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAlbumViewController.swift; sourceTree = "<group>"; };
+		5691E21724E72C82008A4487 /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		5691E21224E6FE6E008A4487 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5691E21724E72C82008A4487 /* AlbumModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5691E21824E72C82008A4487 /* AlbumModel.swift in Sources */,
 				5675BC9824E61AEA00F55131 /* TabBarController.swift in Sources */,
 				5675BC9424E61AEA00F55131 /* AppDelegate.swift in Sources */,
 				5675BC9624E61AEA00F55131 /* SceneDelegate.swift in Sources */,
