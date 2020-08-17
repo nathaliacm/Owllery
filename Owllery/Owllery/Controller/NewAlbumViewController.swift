@@ -68,9 +68,9 @@ class NewAlbumViewController: UIViewController, UIImagePickerControllerDelegate 
         self.view.addSubview(nameTextField)
         
         self.setUpNameTextFieldContraints()
-        nameTextField.placeholder = " nome do álbum "
+        nameTextField.placeholder = "nome do álbum "
         nameTextField.backgroundColor = .tertiarySystemFill
-        nameTextField.layer.cornerRadius = 5
+        nameTextField.borderStyle = .roundedRect
     }
     
     func setUpSelectAlbumImagesButton() {
