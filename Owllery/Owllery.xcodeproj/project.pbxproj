@@ -17,6 +17,7 @@
 		5691E21124E6FE16008A4487 /* GetInspiredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E21024E6FE16008A4487 /* GetInspiredViewController.swift */; };
 		5691E21624E71E25008A4487 /* NewAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E21524E71E25008A4487 /* NewAlbumViewController.swift */; };
 		5691E21824E72C82008A4487 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E21724E72C82008A4487 /* AlbumModel.swift */; };
+		5691E21E24EB66D9008A4487 /* GalleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E21D24EB66D9008A4487 /* GalleryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		5691E21024E6FE16008A4487 /* GetInspiredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInspiredViewController.swift; sourceTree = "<group>"; };
 		5691E21524E71E25008A4487 /* NewAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAlbumViewController.swift; sourceTree = "<group>"; };
 		5691E21724E72C82008A4487 /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		5691E21D24EB66D9008A4487 /* GalleryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				5691E20E24E6FDD8008A4487 /* GalleryViewController.swift */,
 				5691E21024E6FE16008A4487 /* GetInspiredViewController.swift */,
 				5691E21524E71E25008A4487 /* NewAlbumViewController.swift */,
+				5691E21D24EB66D9008A4487 /* GalleryTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5691E21E24EB66D9008A4487 /* GalleryTableViewCell.swift in Sources */,
 				5691E21824E72C82008A4487 /* AlbumModel.swift in Sources */,
 				5675BC9824E61AEA00F55131 /* TabBarController.swift in Sources */,
 				5675BC9424E61AEA00F55131 /* AppDelegate.swift in Sources */,
