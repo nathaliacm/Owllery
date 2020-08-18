@@ -45,32 +45,3 @@ class GalleryViewController: UIViewController {
     }
 
 }
-
-extension GalleryViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return albuns.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "AlbumCell") as? GalleryTableViewCell else {
-            return UITableViewCell()
-        }
-        
-        let album = albuns[indexPath.row]
-        cell.set(album: album)
-        return cell
-    }
-    
-}
-
-extension UIView {
-    func pin(to superView: UIView) {
-        translatesAutoresizingMaskIntoConstraints = false
-        
-        topAnchor.constraint(equalTo: superView.topAnchor).isActive = true
-        leadingAnchor.constraint(equalTo: superView.leadingAnchor).isActive = true
-        trailingAnchor.constraint(equalTo: superView.trailingAnchor).isActive = true
-        bottomAnchor.constraint(equalTo: superView.bottomAnchor).isActive = true
-    }
-}

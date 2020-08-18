@@ -43,7 +43,7 @@ class NewAlbumViewController: UIViewController, UIImagePickerControllerDelegate 
         albumImage.contentMode = UIView.ContentMode.scaleAspectFill
         albumImage.layer.cornerRadius = 100/2
         albumImage.clipsToBounds = true
-        albumImage.backgroundColor = .systemGray
+        albumImage.backgroundColor = .secondarySystemFill
     }
     
     func setUpSelectImageButton() {
@@ -51,8 +51,9 @@ class NewAlbumViewController: UIViewController, UIImagePickerControllerDelegate 
         
         self.setUpSelectImageButtonConstraints()
         
+        selectImageButton.setTitleColor(.systemBlue, for: .normal)
         selectImageButton.layer.cornerRadius = 100/2
-        selectImageButton.setTitle("EDITAR", for: .normal)
+        selectImageButton.setTitle("+", for: .normal)
         selectImageButton.addTarget(self, action: #selector(self.buttonClicked(_:)), for: .touchUpInside)
     }
     
