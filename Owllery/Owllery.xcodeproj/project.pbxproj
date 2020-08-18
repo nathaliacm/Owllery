@@ -20,6 +20,7 @@
 		5691E21E24EB66D9008A4487 /* GalleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E21D24EB66D9008A4487 /* GalleryTableViewCell.swift */; };
 		5691E22124EBFEF3008A4487 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E22024EBFEF3008A4487 /* UIViewExtension.swift */; };
 		5691E22324EBFF51008A4487 /* GalleryViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E22224EBFF51008A4487 /* GalleryViewControllerExtension.swift */; };
+		5691E22924EC651F008A4487 /* GetInspiredViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E22824EC651F008A4487 /* GetInspiredViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		5691E21D24EB66D9008A4487 /* GalleryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryTableViewCell.swift; sourceTree = "<group>"; };
 		5691E22024EBFEF3008A4487 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		5691E22224EBFF51008A4487 /* GalleryViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewControllerExtension.swift; sourceTree = "<group>"; };
+		5691E22824EC651F008A4487 /* GetInspiredViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInspiredViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			children = (
 				5691E22024EBFEF3008A4487 /* UIViewExtension.swift */,
 				5691E22224EBFF51008A4487 /* GalleryViewControllerExtension.swift */,
+				5691E22824EC651F008A4487 /* GetInspiredViewControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				5691E22324EBFF51008A4487 /* GalleryViewControllerExtension.swift in Sources */,
 				5691E21824E72C82008A4487 /* AlbumModel.swift in Sources */,
 				5675BC9824E61AEA00F55131 /* TabBarController.swift in Sources */,
+				5691E22924EC651F008A4487 /* GetInspiredViewControllerExtension.swift in Sources */,
 				5675BC9424E61AEA00F55131 /* AppDelegate.swift in Sources */,
 				5675BC9624E61AEA00F55131 /* SceneDelegate.swift in Sources */,
 				5691E21624E71E25008A4487 /* NewAlbumViewController.swift in Sources */,

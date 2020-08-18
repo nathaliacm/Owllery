@@ -24,10 +24,10 @@ class GalleryViewController: UIViewController {
         
         let testeAlbum = AlbumModel(name: "Teste", albumImage: UIImage(named: "test"), collectionImages: [UIImage(named: "test")])
         albuns.append(testeAlbum)
-        configureTableView()
+        setUpTableView()
     }
     
-    func configureTableView() {
+    func setUpTableView() {
         view.addSubview(tableView)
         setTableViewDelegates()
         tableView.rowHeight = 100
