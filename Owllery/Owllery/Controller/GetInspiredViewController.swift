@@ -19,7 +19,9 @@ class GetInspiredViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "Inspirações"
         
-        setUpCollectionview()
+        if UserDefaults.standard.bool(forKey: "showPhotos") {
+            setUpCollectionview()
+        }
     }
 
     func setUpCollectionview() {
@@ -32,9 +34,9 @@ class GetInspiredViewController: UIViewController {
         
         view.addSubview(photoGridCollectionView ?? UICollectionView())
         setCollectionViewDelegates()
+        photoGridCollectionView?.backgroundColor = .systemBackground
         
-        photoGridCollectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "MyCell")
-        photoGridCollectionView?.backgroundColor = .systemFill
+        photoGridCollectionView?.register(PhotoCustomCell.self, forCellWithReuseIdentifier: "MyCell")
     }
     
     func setCollectionViewDelegates() {
