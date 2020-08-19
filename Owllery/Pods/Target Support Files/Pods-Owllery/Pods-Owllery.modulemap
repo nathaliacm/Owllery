@@ -1,0 +1,6 @@
+framework module Pods_Owllery {
+  umbrella header "Pods-Owllery-umbrella.h"
+
+  export *
+  module * { export * }
+}

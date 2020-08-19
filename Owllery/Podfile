@@ -1,0 +1,8 @@
+platform :ios, '13.5'
+
+target 'Owllery' do
+  use_frameworks!
+
+  pod "BSImagePicker", "~> 3.1"
+  
+end
