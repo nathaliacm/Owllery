@@ -54,7 +54,7 @@ class NewAlbumViewController: UIViewController, UIImagePickerControllerDelegate 
         selectImageButton.setTitleColor(.systemBlue, for: .normal)
         selectImageButton.layer.cornerRadius = 100/2
         selectImageButton.setTitle("+", for: .normal)
-        selectImageButton.addTarget(self, action: #selector(self.buttonClicked(_:)), for: .touchUpInside)
+        selectImageButton.addTarget(self, action: #selector(self.selectImageButtonClicked(_:)), for: .touchUpInside)
     }
     
     func setUpNameLabel() {
@@ -81,6 +81,7 @@ class NewAlbumViewController: UIViewController, UIImagePickerControllerDelegate 
         
         selectAlbumImagesButton.setTitle("Selecionar fotos", for: .normal)
         selectAlbumImagesButton.setTitleColor(.systemBlue, for: .normal)
+        selectAlbumImagesButton.addTarget(self, action: #selector(self.selectAlbumImagesButtonClicked(_:)), for: .touchUpInside)
     }
     
     func setUpSelectAlbumImagesButtonConstraints() {
@@ -128,10 +129,14 @@ class NewAlbumViewController: UIViewController, UIImagePickerControllerDelegate 
         selectImageButton.heightAnchor.constraint(equalToConstant: 100).isActive = true
     }
     
-    @objc func buttonClicked(_ sender: UIButton) {
+    @objc func selectImageButtonClicked(_ sender: UIButton) {
         self.imagePicker.allowsEditing = false
         self.imagePicker.sourceType = .photoLibrary
         present(imagePicker, animated: true, completion: nil)
+    }
+    
+    @objc func selectAlbumImagesButtonClicked(_ sender: UIButton) {
+        
     }
 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
