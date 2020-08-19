@@ -17,6 +17,14 @@
 		5691E21124E6FE16008A4487 /* GetInspiredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E21024E6FE16008A4487 /* GetInspiredViewController.swift */; };
 		5691E21624E71E25008A4487 /* NewAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E21524E71E25008A4487 /* NewAlbumViewController.swift */; };
 		5691E21824E72C82008A4487 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E21724E72C82008A4487 /* AlbumModel.swift */; };
+		5691E21E24EB66D9008A4487 /* GalleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E21D24EB66D9008A4487 /* GalleryTableViewCell.swift */; };
+		5691E22124EBFEF3008A4487 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E22024EBFEF3008A4487 /* UIViewExtension.swift */; };
+		5691E22324EBFF51008A4487 /* GalleryViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E22224EBFF51008A4487 /* GalleryViewControllerExtension.swift */; };
+		5691E22924EC651F008A4487 /* GetInspiredViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E22824EC651F008A4487 /* GetInspiredViewControllerExtension.swift */; };
+		5691E22D24EC6E1E008A4487 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E22C24EC6E1E008A4487 /* Photo.swift */; };
+		5691E22F24EC6E88008A4487 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E22E24EC6E88008A4487 /* APIManager.swift */; };
+		5691E23124EC7229008A4487 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E23024EC7229008A4487 /* APIError.swift */; };
+		5691E23324ECB9A0008A4487 /* PhotoCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E23224ECB9A0008A4487 /* PhotoCustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +40,14 @@
 		5691E21024E6FE16008A4487 /* GetInspiredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInspiredViewController.swift; sourceTree = "<group>"; };
 		5691E21524E71E25008A4487 /* NewAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAlbumViewController.swift; sourceTree = "<group>"; };
 		5691E21724E72C82008A4487 /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		5691E21D24EB66D9008A4487 /* GalleryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryTableViewCell.swift; sourceTree = "<group>"; };
+		5691E22024EBFEF3008A4487 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		5691E22224EBFF51008A4487 /* GalleryViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewControllerExtension.swift; sourceTree = "<group>"; };
+		5691E22824EC651F008A4487 /* GetInspiredViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInspiredViewControllerExtension.swift; sourceTree = "<group>"; };
+		5691E22C24EC6E1E008A4487 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		5691E22E24EC6E88008A4487 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		5691E23024EC7229008A4487 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		5691E23224ECB9A0008A4487 /* PhotoCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +80,8 @@
 		5675BC9224E61AEA00F55131 /* Owllery */ = {
 			isa = PBXGroup;
 			children = (
+				5691E22A24EC6B61008A4487 /* API */,
+				5691E21F24EBFE86008A4487 /* Extensions */,
 				5691E21224E6FE6E008A4487 /* Model */,
 				5691E21424E6FE80008A4487 /* Controller */,
 				5675BC9324E61AEA00F55131 /* AppDelegate.swift */,
@@ -80,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				5691E21724E72C82008A4487 /* AlbumModel.swift */,
+				5691E22C24EC6E1E008A4487 /* Photo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -91,8 +110,29 @@
 				5691E20E24E6FDD8008A4487 /* GalleryViewController.swift */,
 				5691E21024E6FE16008A4487 /* GetInspiredViewController.swift */,
 				5691E21524E71E25008A4487 /* NewAlbumViewController.swift */,
+				5691E21D24EB66D9008A4487 /* GalleryTableViewCell.swift */,
+				5691E23224ECB9A0008A4487 /* PhotoCustomCell.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		5691E21F24EBFE86008A4487 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5691E22024EBFEF3008A4487 /* UIViewExtension.swift */,
+				5691E22224EBFF51008A4487 /* GalleryViewControllerExtension.swift */,
+				5691E22824EC651F008A4487 /* GetInspiredViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5691E22A24EC6B61008A4487 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5691E22E24EC6E88008A4487 /* APIManager.swift */,
+				5691E23024EC7229008A4487 /* APIError.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,13 +227,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5691E22D24EC6E1E008A4487 /* Photo.swift in Sources */,
+				5691E22F24EC6E88008A4487 /* APIManager.swift in Sources */,
+				5691E21E24EB66D9008A4487 /* GalleryTableViewCell.swift in Sources */,
+				5691E22324EBFF51008A4487 /* GalleryViewControllerExtension.swift in Sources */,
+				5691E23324ECB9A0008A4487 /* PhotoCustomCell.swift in Sources */,
 				5691E21824E72C82008A4487 /* AlbumModel.swift in Sources */,
 				5675BC9824E61AEA00F55131 /* TabBarController.swift in Sources */,
+				5691E22924EC651F008A4487 /* GetInspiredViewControllerExtension.swift in Sources */,
 				5675BC9424E61AEA00F55131 /* AppDelegate.swift in Sources */,
 				5675BC9624E61AEA00F55131 /* SceneDelegate.swift in Sources */,
 				5691E21624E71E25008A4487 /* NewAlbumViewController.swift in Sources */,
+				5691E22124EBFEF3008A4487 /* UIViewExtension.swift in Sources */,
 				5691E21124E6FE16008A4487 /* GetInspiredViewController.swift in Sources */,
 				5691E20F24E6FDD8008A4487 /* GalleryViewController.swift in Sources */,
+				5691E23124EC7229008A4487 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

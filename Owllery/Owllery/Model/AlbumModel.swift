@@ -12,10 +12,10 @@ import UIKit
 class AlbumModel {
     
     var name: String
-    var albumImage: UIImage
-    var collectionImages: [UIImage]
+    var albumImage: UIImage?
+    var collectionImages: [UIImage?]
     
-    init(name: String, albumImage: UIImage, collectionImages: [UIImage]) {
+    init(name: String, albumImage: UIImage?, collectionImages: [UIImage?]) {
         self.name = name
         self.albumImage = albumImage
         self.collectionImages = collectionImages
