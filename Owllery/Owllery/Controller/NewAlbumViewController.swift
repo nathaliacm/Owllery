@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Photos
+import BSImagePicker
 
 class NewAlbumViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
@@ -16,6 +18,8 @@ class NewAlbumViewController: UIViewController, UIImagePickerControllerDelegate 
     let nameTextField: UITextField = UITextField()
     let imagePicker = UIImagePickerController()
     let selectAlbumImagesButton: UIButton = UIButton()
+    var photoArray: [UIImage] = [UIImage]()
+    var selectedAssets = [PHAsset]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -136,6 +140,50 @@ class NewAlbumViewController: UIViewController, UIImagePickerControllerDelegate 
     }
     
     @objc func selectAlbumImagesButtonClicked(_ sender: UIButton) {
+        let imagesPicker = ImagePickerController()
+        
+        self.presentImagePicker(imagesPicker, animated: true, select: { (_ : PHAsset) -> Void in
+            
+        }, deselect: { (assets: PHAsset) -> Void in
+            
+        }, cancel: { (assets: [PHAsset]) -> Void in
+            
+        }, finish: { (assets: [PHAsset]) -> Void in
+            for i in 0..<assets.count {
+                self.selectedAssets.append(assets[i])
+            }
+            
+            self.convertAssetToImages()
+            
+        }, completion: nil)
+    }
+    
+    func convertAssetToImages() {
+            
+            if selectedAssets.count != 0 {
+                
+                for i in 0..<selectedAssets.count {
+                    
+                    let manager = PHImageManager.default()
+                    let option = PHImageRequestOptions()
+                    var thumbnail = UIImage()
+                    option.isSynchronous = true
+                    
+                    manager.requestImage(for: selectedAssets[i], targetSize: CGSize(width: 200, height: 200), contentMode: .aspectFill, options: option, resultHandler: {(result, _) -> Void in
+                        thumbnail = result!
+                        
+                    })
+                    
+                    let data = thumbnail.jpegData(compressionQuality: 0.7)
+                    let newImage = UIImage(data: data!)
+                  
+                    self.photoArray.append(newImage! as UIImage)
+                    
+                }
+               
+            }
+            
+            print("complete photo array \(self.photoArray)")
         
     }
 
