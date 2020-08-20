@@ -28,7 +28,7 @@ class NewAlbumViewController: UIViewController, UIImagePickerControllerDelegate 
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "Novo Álbum"
         
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Salvar", style: .plain, target: self, action: nil)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Salvar", style: .plain, target: self, action: #selector(saveContent(_:)))
         
         self.setUpAlbumImage()
         self.setUpSelectImageButton()
@@ -133,6 +133,13 @@ class NewAlbumViewController: UIViewController, UIImagePickerControllerDelegate 
         selectImageButton.heightAnchor.constraint(equalToConstant: 100).isActive = true
     }
     
+    @objc func saveContent(_ sender: UIButton) {
+        //print(nameTextField.text)
+        
+        self.navigationController?.popViewController(animated: true)
+        
+    }
+    
     @objc func selectImageButtonClicked(_ sender: UIButton) {
         self.imagePicker.allowsEditing = false
         self.imagePicker.sourceType = .photoLibrary
@@ -194,5 +201,9 @@ class NewAlbumViewController: UIViewController, UIImagePickerControllerDelegate 
         }
         
         dismiss(animated: true, completion: nil)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
 }
