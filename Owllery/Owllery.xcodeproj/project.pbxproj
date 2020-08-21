@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		561559F124F0037D0019645F /* LoaderJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561559F024F0037D0019645F /* LoaderJson.swift */; };
+		561559F624F05B2B0019645F /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561559F524F05B2B0019645F /* AlbumViewController.swift */; };
+		561559F824F05FAC0019645F /* AlbumViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561559F724F05FAC0019645F /* AlbumViewControllerExtension.swift */; };
 		5675BC9424E61AEA00F55131 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5675BC9324E61AEA00F55131 /* AppDelegate.swift */; };
 		5675BC9624E61AEA00F55131 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5675BC9524E61AEA00F55131 /* SceneDelegate.swift */; };
 		5675BC9824E61AEA00F55131 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5675BC9724E61AEA00F55131 /* TabBarController.swift */; };
@@ -31,6 +34,9 @@
 /* Begin PBXFileReference section */
 		39D8CF86E25A91EE7D889CAA /* Pods_Owllery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Owllery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FAD2A5CF50599C36419AC60 /* Pods-Owllery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Owllery.debug.xcconfig"; path = "Target Support Files/Pods-Owllery/Pods-Owllery.debug.xcconfig"; sourceTree = "<group>"; };
+		561559F024F0037D0019645F /* LoaderJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderJson.swift; sourceTree = "<group>"; };
+		561559F524F05B2B0019645F /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		561559F724F05FAC0019645F /* AlbumViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewControllerExtension.swift; sourceTree = "<group>"; };
 		5675BC9024E61AEA00F55131 /* Owllery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Owllery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5675BC9324E61AEA00F55131 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5675BC9524E61AEA00F55131 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +105,7 @@
 				5691E21F24EBFE86008A4487 /* Extensions */,
 				5691E21224E6FE6E008A4487 /* Model */,
 				5691E21424E6FE80008A4487 /* Controller */,
+				561559F024F0037D0019645F /* LoaderJson.swift */,
 				5675BC9324E61AEA00F55131 /* AppDelegate.swift */,
 				5675BC9524E61AEA00F55131 /* SceneDelegate.swift */,
 				5675BC9C24E61AEC00F55131 /* Assets.xcassets */,
@@ -127,6 +134,7 @@
 				5691E21524E71E25008A4487 /* NewAlbumViewController.swift */,
 				5691E21D24EB66D9008A4487 /* GalleryTableViewCell.swift */,
 				5691E23224ECB9A0008A4487 /* PhotoCustomCell.swift */,
+				561559F524F05B2B0019645F /* AlbumViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -137,6 +145,7 @@
 				5691E22024EBFEF3008A4487 /* UIViewExtension.swift */,
 				5691E22224EBFF51008A4487 /* GalleryViewControllerExtension.swift */,
 				5691E22824EC651F008A4487 /* GetInspiredViewControllerExtension.swift */,
+				561559F724F05FAC0019645F /* AlbumViewControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -156,7 +165,6 @@
 				4FAD2A5CF50599C36419AC60 /* Pods-Owllery.debug.xcconfig */,
 				7229B651FECBB3CFE05C0BD1 /* Pods-Owllery.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -293,18 +301,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				561559F824F05FAC0019645F /* AlbumViewControllerExtension.swift in Sources */,
 				5691E22D24EC6E1E008A4487 /* Photo.swift in Sources */,
 				5691E22F24EC6E88008A4487 /* APIManager.swift in Sources */,
 				5691E21E24EB66D9008A4487 /* GalleryTableViewCell.swift in Sources */,
 				5691E22324EBFF51008A4487 /* GalleryViewControllerExtension.swift in Sources */,
 				5691E23324ECB9A0008A4487 /* PhotoCustomCell.swift in Sources */,
 				5691E21824E72C82008A4487 /* AlbumModel.swift in Sources */,
+				561559F624F05B2B0019645F /* AlbumViewController.swift in Sources */,
 				5675BC9824E61AEA00F55131 /* TabBarController.swift in Sources */,
 				5691E22924EC651F008A4487 /* GetInspiredViewControllerExtension.swift in Sources */,
 				5675BC9424E61AEA00F55131 /* AppDelegate.swift in Sources */,
 				5675BC9624E61AEA00F55131 /* SceneDelegate.swift in Sources */,
 				5691E21624E71E25008A4487 /* NewAlbumViewController.swift in Sources */,
 				5691E22124EBFEF3008A4487 /* UIViewExtension.swift in Sources */,
+				561559F124F0037D0019645F /* LoaderJson.swift in Sources */,
 				5691E21124E6FE16008A4487 /* GetInspiredViewController.swift in Sources */,
 				5691E20F24E6FDD8008A4487 /* GalleryViewController.swift in Sources */,
 				5691E23124EC7229008A4487 /* APIError.swift in Sources */,

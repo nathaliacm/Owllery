@@ -23,9 +23,13 @@ class GalleryTableViewCell: UITableViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
     
     func set(album: AlbumModel) {
-        albumImageView.image = album.albumImage
+        if let data = album.albumImage {
+            albumImageView.image = UIImage(data: data)
+        }
+        
         albumNameLabel.text = album.name
     }
     
