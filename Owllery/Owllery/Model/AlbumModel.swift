@@ -9,13 +9,13 @@
 import Foundation
 import UIKit
 
-class AlbumModel {
+class AlbumModel: Codable {
     
     var name: String
-    var albumImage: UIImage?
-    var collectionImages: [UIImage?]
+    var albumImage: Data?
+    var collectionImages: [Data?]
     
-    init(name: String, albumImage: UIImage?, collectionImages: [UIImage?]) {
+    init(name: String, albumImage: Data?, collectionImages: [Data?]) {
         self.name = name
         self.albumImage = albumImage
         self.collectionImages = collectionImages

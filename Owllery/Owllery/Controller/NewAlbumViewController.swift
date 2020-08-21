@@ -20,6 +20,7 @@ class NewAlbumViewController: UIViewController, UIImagePickerControllerDelegate 
     let selectAlbumImagesButton: UIButton = UIButton()
     var photoArray: [UIImage] = [UIImage]()
     var selectedAssets = [PHAsset]()
+    var album: AlbumModel = AlbumModel(name: "", albumImage: nil, collectionImages: [])
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +29,7 @@ class NewAlbumViewController: UIViewController, UIImagePickerControllerDelegate 
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "Novo Álbum"
         
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Salvar", style: .plain, target: self, action: nil)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Salvar", style: .plain, target: self, action: #selector(saveContent(_:)))
         
         self.setUpAlbumImage()
         self.setUpSelectImageButton()
@@ -133,6 +134,21 @@ class NewAlbumViewController: UIViewController, UIImagePickerControllerDelegate 
         selectImageButton.heightAnchor.constraint(equalToConstant: 100).isActive = true
     }
     
+    @objc func saveContent(_ sender: UIButton) {
+        //print(nameTextField.text)
+        album.name = nameTextField.text ?? ""
+        var albuns = LoaderJson().load()
+        
+        albuns?.append(album)
+        if let albuns = albuns {
+            LoaderJson().save(update: albuns)
+            print("salvou")
+        }
+        
+        self.navigationController?.popViewController(animated: true)
+        
+    }
+    
     @objc func selectImageButtonClicked(_ sender: UIButton) {
         self.imagePicker.allowsEditing = false
         self.imagePicker.sourceType = .photoLibrary
@@ -174,7 +190,8 @@ class NewAlbumViewController: UIViewController, UIImagePickerControllerDelegate 
                         
                     })
                     
-                    let data = thumbnail.jpegData(compressionQuality: 0.7)
+                    let data = thumbnail.jpegData(compressionQuality: 1)
+                    album.collectionImages.append(data)
                     let newImage = UIImage(data: data!)
                   
                     self.photoArray.append(newImage! as UIImage)
@@ -182,17 +199,25 @@ class NewAlbumViewController: UIViewController, UIImagePickerControllerDelegate 
                 }
                
             }
-            
-            print("complete photo array \(self.photoArray)")
         
+            print("complete photo array \(self.photoArray)")
     }
 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
         if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             albumImage.contentMode = UIView.ContentMode.scaleAspectFill
-            albumImage.image = pickedImage
+            //albumImage.image = pickedImage
+            //NSData().
+            if let data = pickedImage.pngData() {
+                album.albumImage = data
+                albumImage.image = UIImage(data: data)
+            }
         }
         
         dismiss(animated: true, completion: nil)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
 }
