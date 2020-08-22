@@ -24,7 +24,6 @@ class GalleryTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 
-    
     func set(album: AlbumModel) {
         if let data = album.albumImage {
             albumImageView.image = UIImage(data: data)

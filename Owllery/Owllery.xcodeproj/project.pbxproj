@@ -10,6 +10,7 @@
 		561559F124F0037D0019645F /* LoaderJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561559F024F0037D0019645F /* LoaderJson.swift */; };
 		561559F624F05B2B0019645F /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561559F524F05B2B0019645F /* AlbumViewController.swift */; };
 		561559F824F05FAC0019645F /* AlbumViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561559F724F05FAC0019645F /* AlbumViewControllerExtension.swift */; };
+		56155A0024F0BE350019645F /* OwlleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561559FF24F0BE350019645F /* OwlleryTests.swift */; };
 		5675BC9424E61AEA00F55131 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5675BC9324E61AEA00F55131 /* AppDelegate.swift */; };
 		5675BC9624E61AEA00F55131 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5675BC9524E61AEA00F55131 /* SceneDelegate.swift */; };
 		5675BC9824E61AEA00F55131 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5675BC9724E61AEA00F55131 /* TabBarController.swift */; };
@@ -31,12 +32,25 @@
 		5CE210972C4C21DB62A8F2E0 /* Pods_Owllery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D8CF86E25A91EE7D889CAA /* Pods_Owllery.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		56155A0224F0BE350019645F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5675BC8824E61AEA00F55131 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5675BC8F24E61AEA00F55131;
+			remoteInfo = Owllery;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		39D8CF86E25A91EE7D889CAA /* Pods_Owllery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Owllery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FAD2A5CF50599C36419AC60 /* Pods-Owllery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Owllery.debug.xcconfig"; path = "Target Support Files/Pods-Owllery/Pods-Owllery.debug.xcconfig"; sourceTree = "<group>"; };
 		561559F024F0037D0019645F /* LoaderJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderJson.swift; sourceTree = "<group>"; };
 		561559F524F05B2B0019645F /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		561559F724F05FAC0019645F /* AlbumViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewControllerExtension.swift; sourceTree = "<group>"; };
+		561559FD24F0BE350019645F /* OwlleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OwlleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		561559FF24F0BE350019645F /* OwlleryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwlleryTests.swift; sourceTree = "<group>"; };
+		56155A0124F0BE350019645F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5675BC9024E61AEA00F55131 /* Owllery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Owllery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5675BC9324E61AEA00F55131 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5675BC9524E61AEA00F55131 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +75,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		561559FA24F0BE350019645F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5675BC8D24E61AEA00F55131 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -80,10 +101,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		561559FE24F0BE350019645F /* OwlleryTests */ = {
+			isa = PBXGroup;
+			children = (
+				561559FF24F0BE350019645F /* OwlleryTests.swift */,
+				56155A0124F0BE350019645F /* Info.plist */,
+			);
+			path = OwlleryTests;
+			sourceTree = "<group>";
+		};
 		5675BC8724E61AEA00F55131 = {
 			isa = PBXGroup;
 			children = (
 				5675BC9224E61AEA00F55131 /* Owllery */,
+				561559FE24F0BE350019645F /* OwlleryTests */,
 				5675BC9124E61AEA00F55131 /* Products */,
 				95216554E359D810F4048BC5 /* Pods */,
 				11A8C2A74FB4C1D489BA1DD7 /* Frameworks */,
@@ -94,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				5675BC9024E61AEA00F55131 /* Owllery.app */,
+				561559FD24F0BE350019645F /* OwlleryTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,6 +203,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		561559FC24F0BE350019645F /* OwlleryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56155A0424F0BE350019645F /* Build configuration list for PBXNativeTarget "OwlleryTests" */;
+			buildPhases = (
+				561559F924F0BE350019645F /* Sources */,
+				561559FA24F0BE350019645F /* Frameworks */,
+				561559FB24F0BE350019645F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56155A0324F0BE350019645F /* PBXTargetDependency */,
+			);
+			name = OwlleryTests;
+			productName = OwlleryTests;
+			productReference = 561559FD24F0BE350019645F /* OwlleryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		5675BC8F24E61AEA00F55131 /* Owllery */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5675BCA424E61AEC00F55131 /* Build configuration list for PBXNativeTarget "Owllery" */;
@@ -201,6 +251,10 @@
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = "Nathalia Cardoso";
 				TargetAttributes = {
+					561559FC24F0BE350019645F = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 5675BC8F24E61AEA00F55131;
+					};
 					5675BC8F24E61AEA00F55131 = {
 						CreatedOnToolsVersion = 11.6;
 					};
@@ -220,11 +274,19 @@
 			projectRoot = "";
 			targets = (
 				5675BC8F24E61AEA00F55131 /* Owllery */,
+				561559FC24F0BE350019645F /* OwlleryTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		561559FB24F0BE350019645F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5675BC8E24E61AEA00F55131 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -297,6 +359,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		561559F924F0BE350019645F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56155A0024F0BE350019645F /* OwlleryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5675BC8C24E61AEA00F55131 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -324,6 +394,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		56155A0324F0BE350019645F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5675BC8F24E61AEA00F55131 /* Owllery */;
+			targetProxy = 56155A0224F0BE350019645F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		5675BC9E24E61AEC00F55131 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -336,6 +414,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		56155A0524F0BE350019645F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KUGC5CZ6Z;
+				INFOPLIST_FILE = OwlleryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nathalia.OwlleryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Owllery.app/Owllery";
+			};
+			name = Debug;
+		};
+		56155A0624F0BE350019645F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KUGC5CZ6Z;
+				INFOPLIST_FILE = OwlleryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nathalia.OwlleryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Owllery.app/Owllery";
+			};
+			name = Release;
+		};
 		5675BCA224E61AEC00F55131 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -491,6 +609,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		56155A0424F0BE350019645F /* Build configuration list for PBXNativeTarget "OwlleryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56155A0524F0BE350019645F /* Debug */,
+				56155A0624F0BE350019645F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5675BC8B24E61AEA00F55131 /* Build configuration list for PBXProject "Owllery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
