@@ -24,4 +24,12 @@ extension GalleryViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            albuns.remove(at: indexPath.row)
+            LoaderJson().save(update: albuns)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
+    
 }
