@@ -3,45 +3,123 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		561559F124F0037D0019645F /* LoaderJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561559F024F0037D0019645F /* LoaderJson.swift */; };
+		561559F624F05B2B0019645F /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561559F524F05B2B0019645F /* AlbumViewController.swift */; };
+		561559F824F05FAC0019645F /* AlbumViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561559F724F05FAC0019645F /* AlbumViewControllerExtension.swift */; };
+		56155A0024F0BE350019645F /* OwlleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561559FF24F0BE350019645F /* OwlleryTests.swift */; };
 		5675BC9424E61AEA00F55131 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5675BC9324E61AEA00F55131 /* AppDelegate.swift */; };
 		5675BC9624E61AEA00F55131 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5675BC9524E61AEA00F55131 /* SceneDelegate.swift */; };
-		5675BC9824E61AEA00F55131 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5675BC9724E61AEA00F55131 /* ViewController.swift */; };
-		5675BC9B24E61AEA00F55131 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5675BC9924E61AEA00F55131 /* Main.storyboard */; };
+		5675BC9824E61AEA00F55131 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5675BC9724E61AEA00F55131 /* TabBarController.swift */; };
 		5675BC9D24E61AEC00F55131 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5675BC9C24E61AEC00F55131 /* Assets.xcassets */; };
 		5675BCA024E61AEC00F55131 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5675BC9E24E61AEC00F55131 /* LaunchScreen.storyboard */; };
+		567FB5C724F3290100028560 /* ShowPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567FB5C624F3290100028560 /* ShowPhotoViewController.swift */; };
+		5691E20D24E6DB00008A4487 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 5691E20C24E6DB00008A4487 /* .swiftlint.yml */; };
+		5691E20F24E6FDD8008A4487 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E20E24E6FDD8008A4487 /* GalleryViewController.swift */; };
+		5691E21124E6FE16008A4487 /* GetInspiredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E21024E6FE16008A4487 /* GetInspiredViewController.swift */; };
+		5691E21624E71E25008A4487 /* NewAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E21524E71E25008A4487 /* NewAlbumViewController.swift */; };
+		5691E21824E72C82008A4487 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E21724E72C82008A4487 /* AlbumModel.swift */; };
+		5691E21E24EB66D9008A4487 /* GalleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E21D24EB66D9008A4487 /* GalleryTableViewCell.swift */; };
+		5691E22124EBFEF3008A4487 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E22024EBFEF3008A4487 /* UIViewExtension.swift */; };
+		5691E22324EBFF51008A4487 /* GalleryViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E22224EBFF51008A4487 /* GalleryViewControllerExtension.swift */; };
+		5691E22924EC651F008A4487 /* GetInspiredViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E22824EC651F008A4487 /* GetInspiredViewControllerExtension.swift */; };
+		5691E22D24EC6E1E008A4487 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E22C24EC6E1E008A4487 /* Photo.swift */; };
+		5691E22F24EC6E88008A4487 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E22E24EC6E88008A4487 /* APIManager.swift */; };
+		5691E23124EC7229008A4487 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E23024EC7229008A4487 /* APIError.swift */; };
+		5691E23324ECB9A0008A4487 /* PhotoCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E23224ECB9A0008A4487 /* PhotoCustomCell.swift */; };
+		5CE210972C4C21DB62A8F2E0 /* Pods_Owllery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D8CF86E25A91EE7D889CAA /* Pods_Owllery.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		56155A0224F0BE350019645F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5675BC8824E61AEA00F55131 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5675BC8F24E61AEA00F55131;
+			remoteInfo = Owllery;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		39D8CF86E25A91EE7D889CAA /* Pods_Owllery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Owllery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FAD2A5CF50599C36419AC60 /* Pods-Owllery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Owllery.debug.xcconfig"; path = "Target Support Files/Pods-Owllery/Pods-Owllery.debug.xcconfig"; sourceTree = "<group>"; };
+		561559F024F0037D0019645F /* LoaderJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderJson.swift; sourceTree = "<group>"; };
+		561559F524F05B2B0019645F /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		561559F724F05FAC0019645F /* AlbumViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewControllerExtension.swift; sourceTree = "<group>"; };
+		561559FD24F0BE350019645F /* OwlleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OwlleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		561559FF24F0BE350019645F /* OwlleryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwlleryTests.swift; sourceTree = "<group>"; };
+		56155A0124F0BE350019645F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5675BC9024E61AEA00F55131 /* Owllery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Owllery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5675BC9324E61AEA00F55131 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5675BC9524E61AEA00F55131 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5675BC9724E61AEA00F55131 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5675BC9A24E61AEA00F55131 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5675BC9724E61AEA00F55131 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		5675BC9C24E61AEC00F55131 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5675BC9F24E61AEC00F55131 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5675BCA124E61AEC00F55131 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		567FB5C624F3290100028560 /* ShowPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPhotoViewController.swift; sourceTree = "<group>"; };
+		5691E20C24E6DB00008A4487 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		5691E20E24E6FDD8008A4487 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		5691E21024E6FE16008A4487 /* GetInspiredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInspiredViewController.swift; sourceTree = "<group>"; };
+		5691E21524E71E25008A4487 /* NewAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAlbumViewController.swift; sourceTree = "<group>"; };
+		5691E21724E72C82008A4487 /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		5691E21D24EB66D9008A4487 /* GalleryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryTableViewCell.swift; sourceTree = "<group>"; };
+		5691E22024EBFEF3008A4487 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		5691E22224EBFF51008A4487 /* GalleryViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewControllerExtension.swift; sourceTree = "<group>"; };
+		5691E22824EC651F008A4487 /* GetInspiredViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInspiredViewControllerExtension.swift; sourceTree = "<group>"; };
+		5691E22C24EC6E1E008A4487 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		5691E22E24EC6E88008A4487 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		5691E23024EC7229008A4487 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		5691E23224ECB9A0008A4487 /* PhotoCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCustomCell.swift; sourceTree = "<group>"; };
+		7229B651FECBB3CFE05C0BD1 /* Pods-Owllery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Owllery.release.xcconfig"; path = "Target Support Files/Pods-Owllery/Pods-Owllery.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5675BC8D24E61AEA00F55131 /* Frameworks */ = {
+		561559FA24F0BE350019645F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5675BC8D24E61AEA00F55131 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CE210972C4C21DB62A8F2E0 /* Pods_Owllery.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11A8C2A74FB4C1D489BA1DD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39D8CF86E25A91EE7D889CAA /* Pods_Owllery.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		561559FE24F0BE350019645F /* OwlleryTests */ = {
+			isa = PBXGroup;
+			children = (
+				561559FF24F0BE350019645F /* OwlleryTests.swift */,
+				56155A0124F0BE350019645F /* Info.plist */,
+			);
+			path = OwlleryTests;
+			sourceTree = "<group>";
+		};
 		5675BC8724E61AEA00F55131 = {
 			isa = PBXGroup;
 			children = (
 				5675BC9224E61AEA00F55131 /* Owllery */,
+				561559FE24F0BE350019645F /* OwlleryTests */,
 				5675BC9124E61AEA00F55131 /* Products */,
+				95216554E359D810F4048BC5 /* Pods */,
+				11A8C2A74FB4C1D489BA1DD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				5675BC9024E61AEA00F55131 /* Owllery.app */,
+				561559FD24F0BE350019645F /* OwlleryTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,27 +135,105 @@
 		5675BC9224E61AEA00F55131 /* Owllery */ = {
 			isa = PBXGroup;
 			children = (
+				5691E22A24EC6B61008A4487 /* API */,
+				5691E21F24EBFE86008A4487 /* Extensions */,
+				5691E21224E6FE6E008A4487 /* Model */,
+				5691E21424E6FE80008A4487 /* Controller */,
+				561559F024F0037D0019645F /* LoaderJson.swift */,
 				5675BC9324E61AEA00F55131 /* AppDelegate.swift */,
 				5675BC9524E61AEA00F55131 /* SceneDelegate.swift */,
-				5675BC9724E61AEA00F55131 /* ViewController.swift */,
-				5675BC9924E61AEA00F55131 /* Main.storyboard */,
 				5675BC9C24E61AEC00F55131 /* Assets.xcassets */,
 				5675BC9E24E61AEC00F55131 /* LaunchScreen.storyboard */,
 				5675BCA124E61AEC00F55131 /* Info.plist */,
+				5691E20C24E6DB00008A4487 /* .swiftlint.yml */,
 			);
 			path = Owllery;
+			sourceTree = "<group>";
+		};
+		5691E21224E6FE6E008A4487 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5691E21724E72C82008A4487 /* AlbumModel.swift */,
+				5691E22C24EC6E1E008A4487 /* Photo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5691E21424E6FE80008A4487 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5675BC9724E61AEA00F55131 /* TabBarController.swift */,
+				5691E20E24E6FDD8008A4487 /* GalleryViewController.swift */,
+				5691E21024E6FE16008A4487 /* GetInspiredViewController.swift */,
+				5691E21524E71E25008A4487 /* NewAlbumViewController.swift */,
+				5691E21D24EB66D9008A4487 /* GalleryTableViewCell.swift */,
+				5691E23224ECB9A0008A4487 /* PhotoCustomCell.swift */,
+				561559F524F05B2B0019645F /* AlbumViewController.swift */,
+				567FB5C624F3290100028560 /* ShowPhotoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5691E21F24EBFE86008A4487 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5691E22024EBFEF3008A4487 /* UIViewExtension.swift */,
+				5691E22224EBFF51008A4487 /* GalleryViewControllerExtension.swift */,
+				5691E22824EC651F008A4487 /* GetInspiredViewControllerExtension.swift */,
+				561559F724F05FAC0019645F /* AlbumViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5691E22A24EC6B61008A4487 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5691E22E24EC6E88008A4487 /* APIManager.swift */,
+				5691E23024EC7229008A4487 /* APIError.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		95216554E359D810F4048BC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4FAD2A5CF50599C36419AC60 /* Pods-Owllery.debug.xcconfig */,
+				7229B651FECBB3CFE05C0BD1 /* Pods-Owllery.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		561559FC24F0BE350019645F /* OwlleryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56155A0424F0BE350019645F /* Build configuration list for PBXNativeTarget "OwlleryTests" */;
+			buildPhases = (
+				561559F924F0BE350019645F /* Sources */,
+				561559FA24F0BE350019645F /* Frameworks */,
+				561559FB24F0BE350019645F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56155A0324F0BE350019645F /* PBXTargetDependency */,
+			);
+			name = OwlleryTests;
+			productName = OwlleryTests;
+			productReference = 561559FD24F0BE350019645F /* OwlleryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		5675BC8F24E61AEA00F55131 /* Owllery */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5675BCA424E61AEC00F55131 /* Build configuration list for PBXNativeTarget "Owllery" */;
 			buildPhases = (
+				B393A6977AA40A721AE5B278 /* [CP] Check Pods Manifest.lock */,
 				5675BC8C24E61AEA00F55131 /* Sources */,
 				5675BC8D24E61AEA00F55131 /* Frameworks */,
 				5675BC8E24E61AEA00F55131 /* Resources */,
+				5691E20B24E6D8CD008A4487 /* ShellScript */,
+				A295C08FE47457FD028A32B5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -97,6 +254,10 @@
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = "Nathalia Cardoso";
 				TargetAttributes = {
+					561559FC24F0BE350019645F = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 5675BC8F24E61AEA00F55131;
+					};
 					5675BC8F24E61AEA00F55131 = {
 						CreatedOnToolsVersion = 11.6;
 					};
@@ -116,45 +277,136 @@
 			projectRoot = "";
 			targets = (
 				5675BC8F24E61AEA00F55131 /* Owllery */,
+				561559FC24F0BE350019645F /* OwlleryTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		561559FB24F0BE350019645F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5675BC8E24E61AEA00F55131 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5691E20D24E6DB00008A4487 /* .swiftlint.yml in Resources */,
 				5675BCA024E61AEC00F55131 /* LaunchScreen.storyboard in Resources */,
 				5675BC9D24E61AEC00F55131 /* Assets.xcassets in Resources */,
-				5675BC9B24E61AEA00F55131 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5691E20B24E6D8CD008A4487 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		A295C08FE47457FD028A32B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Owllery/Pods-Owllery-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Owllery/Pods-Owllery-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Owllery/Pods-Owllery-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B393A6977AA40A721AE5B278 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Owllery-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		561559F924F0BE350019645F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56155A0024F0BE350019645F /* OwlleryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5675BC8C24E61AEA00F55131 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5675BC9824E61AEA00F55131 /* ViewController.swift in Sources */,
+				561559F824F05FAC0019645F /* AlbumViewControllerExtension.swift in Sources */,
+				567FB5C724F3290100028560 /* ShowPhotoViewController.swift in Sources */,
+				5691E22D24EC6E1E008A4487 /* Photo.swift in Sources */,
+				5691E22F24EC6E88008A4487 /* APIManager.swift in Sources */,
+				5691E21E24EB66D9008A4487 /* GalleryTableViewCell.swift in Sources */,
+				5691E22324EBFF51008A4487 /* GalleryViewControllerExtension.swift in Sources */,
+				5691E23324ECB9A0008A4487 /* PhotoCustomCell.swift in Sources */,
+				5691E21824E72C82008A4487 /* AlbumModel.swift in Sources */,
+				561559F624F05B2B0019645F /* AlbumViewController.swift in Sources */,
+				5675BC9824E61AEA00F55131 /* TabBarController.swift in Sources */,
+				5691E22924EC651F008A4487 /* GetInspiredViewControllerExtension.swift in Sources */,
 				5675BC9424E61AEA00F55131 /* AppDelegate.swift in Sources */,
 				5675BC9624E61AEA00F55131 /* SceneDelegate.swift in Sources */,
+				5691E21624E71E25008A4487 /* NewAlbumViewController.swift in Sources */,
+				5691E22124EBFEF3008A4487 /* UIViewExtension.swift in Sources */,
+				561559F124F0037D0019645F /* LoaderJson.swift in Sources */,
+				5691E21124E6FE16008A4487 /* GetInspiredViewController.swift in Sources */,
+				5691E20F24E6FDD8008A4487 /* GalleryViewController.swift in Sources */,
+				5691E23124EC7229008A4487 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		5675BC9924E61AEA00F55131 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5675BC9A24E61AEA00F55131 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		56155A0324F0BE350019645F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5675BC8F24E61AEA00F55131 /* Owllery */;
+			targetProxy = 56155A0224F0BE350019645F /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		5675BC9E24E61AEC00F55131 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -166,6 +418,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		56155A0524F0BE350019645F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KUGC5CZ6Z;
+				INFOPLIST_FILE = OwlleryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nathalia.OwlleryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Owllery.app/Owllery";
+			};
+			name = Debug;
+		};
+		56155A0624F0BE350019645F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KUGC5CZ6Z;
+				INFOPLIST_FILE = OwlleryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nathalia.OwlleryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Owllery.app/Owllery";
+			};
+			name = Release;
+		};
 		5675BCA224E61AEC00F55131 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -282,6 +574,7 @@
 		};
 		5675BCA524E61AEC00F55131 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FAD2A5CF50599C36419AC60 /* Pods-Owllery.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +593,7 @@
 		};
 		5675BCA624E61AEC00F55131 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7229B651FECBB3CFE05C0BD1 /* Pods-Owllery.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -319,6 +613,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		56155A0424F0BE350019645F /* Build configuration list for PBXNativeTarget "OwlleryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56155A0524F0BE350019645F /* Debug */,
+				56155A0624F0BE350019645F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5675BC8B24E61AEA00F55131 /* Build configuration list for PBXProject "Owllery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

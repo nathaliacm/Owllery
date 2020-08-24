@@ -1,0 +1,21 @@
+disabled_rules:
+- trailing_whitespace
+- line_length
+- identifier_name
+- statement_position
+- force_cast
+- colon
+- todo
+- comma
+- trailing_comma
+- nesting
+- weak_delegate
+- trailing_semicolon
+- implicit_getter
+- switch_case_alignment
+- unused_closure_parameter
+- computed_accessors_order
+- cyclomatic_complexity
+- notification_center_detachment
+- multiple_closures_with_trailing_closure
+- opening_brace

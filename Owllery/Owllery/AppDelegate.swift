@@ -11,27 +11,40 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UserDefaults.standard.set(false, forKey: "showPhotos")
+        UserDefaults.standard.set(0, forKey: "photosCount")
+        
+        var photos: [Photo] = []
+        var count = 0
+        
+        APIManager().getData { (result) in
+            switch result {
+            case .success(let apiPhotos):
+                for photo in apiPhotos {
+                    let photo = Photo(id: photo.id, urls: photo.urls)
+                    photos.append(photo)
+                    guard let url = URL(string: photo.urls["regular"] ?? "") else { return }
+                    
+                    let dataOpt = try? Data(contentsOf: url)
+                    
+                    if let data = dataOpt {
+                        UserDefaults.standard.setValue(data, forKey: "\(count)")
+                        count += 1
+                    }
+                }
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+        while true {
+            if UserDefaults.standard.bool(forKey: "showPhotos") {
+                UserDefaults.standard.setValue(photos.count, forKey: "photosCount")
+                break
+            }
+        }
         return true
     }
 
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
-    }
-
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-    }
-
-
 }
-
