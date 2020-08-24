@@ -16,6 +16,7 @@
 		5675BC9824E61AEA00F55131 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5675BC9724E61AEA00F55131 /* TabBarController.swift */; };
 		5675BC9D24E61AEC00F55131 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5675BC9C24E61AEC00F55131 /* Assets.xcassets */; };
 		5675BCA024E61AEC00F55131 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5675BC9E24E61AEC00F55131 /* LaunchScreen.storyboard */; };
+		567FB5C724F3290100028560 /* ShowPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567FB5C624F3290100028560 /* ShowPhotoViewController.swift */; };
 		5691E20D24E6DB00008A4487 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 5691E20C24E6DB00008A4487 /* .swiftlint.yml */; };
 		5691E20F24E6FDD8008A4487 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E20E24E6FDD8008A4487 /* GalleryViewController.swift */; };
 		5691E21124E6FE16008A4487 /* GetInspiredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691E21024E6FE16008A4487 /* GetInspiredViewController.swift */; };
@@ -58,6 +59,7 @@
 		5675BC9C24E61AEC00F55131 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5675BC9F24E61AEC00F55131 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5675BCA124E61AEC00F55131 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		567FB5C624F3290100028560 /* ShowPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPhotoViewController.swift; sourceTree = "<group>"; };
 		5691E20C24E6DB00008A4487 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		5691E20E24E6FDD8008A4487 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		5691E21024E6FE16008A4487 /* GetInspiredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInspiredViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				5691E21D24EB66D9008A4487 /* GalleryTableViewCell.swift */,
 				5691E23224ECB9A0008A4487 /* PhotoCustomCell.swift */,
 				561559F524F05B2B0019645F /* AlbumViewController.swift */,
+				567FB5C624F3290100028560 /* ShowPhotoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				561559F824F05FAC0019645F /* AlbumViewControllerExtension.swift in Sources */,
+				567FB5C724F3290100028560 /* ShowPhotoViewController.swift in Sources */,
 				5691E22D24EC6E1E008A4487 /* Photo.swift in Sources */,
 				5691E22F24EC6E88008A4487 /* APIManager.swift in Sources */,
 				5691E21E24EB66D9008A4487 /* GalleryTableViewCell.swift in Sources */,

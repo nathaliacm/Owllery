@@ -29,5 +29,9 @@ extension AlbumViewController: UICollectionViewDataSource, UICollectionViewDeleg
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
        print("User tapped on item \(indexPath.row)")
+        guard let currentItem = self.currentItem.collectionImages[indexPath.row] else { return }
+        let viewController = ShowPhotoViewController()
+        viewController.photo = UIImage(data: currentItem)
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 }

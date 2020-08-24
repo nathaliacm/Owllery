@@ -29,5 +29,9 @@ extension GetInspiredViewController: UICollectionViewDataSource, UICollectionVie
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
        print("User tapped on item \(indexPath.row)")
+        guard let currentItem = UserDefaults.standard.object(forKey: "\(indexPath.row)") as? Data else { return }
+        let viewController = ShowPhotoViewController()
+        viewController.photo = UIImage(data: currentItem)
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 }
