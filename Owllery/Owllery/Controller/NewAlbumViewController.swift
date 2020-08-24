@@ -14,7 +14,6 @@ class NewAlbumViewController: UIViewController, UIImagePickerControllerDelegate 
     
     let albumImage: UIImageView = UIImageView()
     let selectImageButton: UIButton = UIButton()
-    let nameLabel: UILabel = UILabel()
     let nameTextField: UITextField = UITextField()
     let imagePicker = UIImagePickerController()
     let selectAlbumImagesButton: UIButton = UIButton()
@@ -33,7 +32,7 @@ class NewAlbumViewController: UIViewController, UIImagePickerControllerDelegate 
         
         self.setUpAlbumImage()
         self.setUpSelectImageButton()
-        self.setUpNameLabel()
+        //self.setUpNameLabel()
         self.setUpNameTextField()
         self.setUpSelectAlbumImagesButton()
         
@@ -62,14 +61,6 @@ class NewAlbumViewController: UIViewController, UIImagePickerControllerDelegate 
         selectImageButton.addTarget(self, action: #selector(self.selectImageButtonClicked(_:)), for: .touchUpInside)
     }
     
-    func setUpNameLabel() {
-        self.view.addSubview(nameLabel)
-        
-        self.setUpNameLabelConstraints()
-        
-        nameLabel.text = "Nome do álbum: "
-    }
-    
     func setUpNameTextField() {
         self.view.addSubview(nameTextField)
         
@@ -92,7 +83,7 @@ class NewAlbumViewController: UIViewController, UIImagePickerControllerDelegate 
     func setUpSelectAlbumImagesButtonConstraints() {
         selectAlbumImagesButton.translatesAutoresizingMaskIntoConstraints = false
         
-        selectAlbumImagesButton.topAnchor.constraint(equalTo: nameLabel.topAnchor, constant: 100).isActive = true
+        selectAlbumImagesButton.topAnchor.constraint(equalTo: nameTextField.topAnchor, constant: 100).isActive = true
         selectAlbumImagesButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         selectAlbumImagesButton.widthAnchor.constraint(equalToConstant: 150).isActive = true
         selectAlbumImagesButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
@@ -102,18 +93,9 @@ class NewAlbumViewController: UIViewController, UIImagePickerControllerDelegate 
         nameTextField.translatesAutoresizingMaskIntoConstraints = false
         
         nameTextField.topAnchor.constraint(equalTo: albumImage.topAnchor, constant: 170).isActive = true
-        nameTextField.leftAnchor.constraint(equalTo: nameLabel.leftAnchor, constant: 140).isActive = true
-        nameTextField.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
+        nameTextField.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 45).isActive = true
+        nameTextField.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -45).isActive = true
         nameTextField.heightAnchor.constraint(equalToConstant: 30).isActive = true
-    }
-    
-    func setUpNameLabelConstraints() {
-        nameLabel.translatesAutoresizingMaskIntoConstraints = false
-        
-        nameLabel.topAnchor.constraint(equalTo: albumImage.topAnchor, constant: 170).isActive = true
-        nameLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
-        nameLabel.widthAnchor.constraint(equalToConstant: 150).isActive = true
-        nameLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
     }
     
     func setUpAlbumImageConstraints() {
@@ -135,7 +117,6 @@ class NewAlbumViewController: UIViewController, UIImagePickerControllerDelegate 
     }
     
     @objc func saveContent(_ sender: UIButton) {
-        //print(nameTextField.text)
         album.name = nameTextField.text ?? ""
         var albuns = LoaderJson().load()
         
